@@ -1,0 +1,24 @@
+<div class="container mt-5">
+  <h1 class="text-center mb-4">{{ title }}</h1>
+
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="col-6">
+        <app-user-text username="Pepe" (SendMessage)="addMensaje('Pepe', $event)"></app-user-text>
+      </div>
+      <div class="col-6">
+    <app-user-text username="Maria" (SendMessage)="addMensaje('Maria', $event)"></app-user-text>
+      </div>
+    </div>
+    <br>
+    <div class="container" id="textarea">
+      <div class="row">
+        <div class="col-6 justify-content-center">
+          <app-sala [messages]="message"></app-sala>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

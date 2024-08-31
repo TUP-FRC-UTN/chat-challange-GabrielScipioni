@@ -1,0 +1,29 @@
+<div class="container">
+<form>
+
+  <!-- nombre de usuario -->
+  <div class="row">
+    <div class="col-2">
+  <p>Usuario: {{username}}</p>
+    </div>
+    <div class="col-10"></div>
+  </div>
+  <br>
+
+  <!-- texto -->
+  <div class="row">
+    <div class="col">
+      <input type="text" [(ngModel)]="message" name="message" class="form-control" placeholder="Escriba un mensage...">
+
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-1">
+    <button class="btn btn-primary" (click)="Send()">Enviar</button>
+    </div>
+    <div class="col-11"></div>
+  </div>
+</form>
+
+</div>
